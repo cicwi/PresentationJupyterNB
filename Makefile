@@ -3,6 +3,6 @@ html: Presentation.ipynb
 	mv Presentation.slides.html html/Presentation.html
 	cp -r figures ./html
 website: html
-	ghp-import -n -p -f html
+	ghp-import --no-jekyll --no-history --push --force html/
 	open https://cicwi.github.io/PresentationJupyterNB/Presentation.html#/
 	
