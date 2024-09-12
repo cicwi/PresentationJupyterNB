@@ -4,5 +4,3 @@ html: Presentation.ipynb
 	cp -r figures ./html
 website: html
 	ghp-import --no-jekyll --no-history --push --force html/
-	open https://cicwi.github.io/PresentationJupyterNB/Presentation.html#/
-	
